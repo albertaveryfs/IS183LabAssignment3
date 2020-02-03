@@ -10,6 +10,14 @@ html, body {
 
 /* ome page css */
 
+.cursive {
+    font-family: 'Cookie', cursive;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
 #home-container {
     height: 100%;
     display: grid;
@@ -19,9 +27,14 @@ html, body {
 
 .r1 {
     background-color: black;
+    background-image: url('img/david.jpg');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
+    background-position: 50%;
 }
 
-.r1-inner {
+.r1-inner, .r2-inner {
     width: 80%;
     height: 100%;
     margin: 0px auto;
@@ -42,11 +55,47 @@ html, body {
 .home-main-nav  ul > li > a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 1em;
+    padding: 15px .5em;
 
+
+}
+
+.home-main-nav > ul > li:first-child { 
+    font-size: 1.75em;
+}
+
+.home-main-nav > ul > li:first-child a:hover {
+    background-color: transparent;
+    color:#428bca;
 }
 .home-main-nav  ul > li > a:hover {
     background-color: white;
     color: red;
+}
+.gallery-description {
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+    font-size: 1.4em;
+    padding-bottom: 40px
+}
+
+.r2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 80%;
+    margin: 0px auto;
+    height: 100%;
+    padding: 2em 0em;
+    grid-column-gap: 1em;
+}
+
+.r2 > div {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
 }
 /* end homepage css */
