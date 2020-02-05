@@ -17,6 +17,9 @@ html, body {
 .circle {
     border-radius: 50%;
 }
+.drop-shadow {
+    text-shadow: 2px 2px 3px #000;
+}
 
 #home-container {
     height: 100%;
