@@ -101,4 +101,8 @@ html, body {
 .left-align {
     text-align: left;
 }
+
+.full-width {
+    width: 100%;
+  }
 /* end homepage css */

@@ -5,30 +5,28 @@
 
 #about-container-inner {
   display: grid;
-  grid-row-gap: 1em;
   grid-template-rows: auto 1fr;
-  /* height: 100%; */
+  grid-row-gap: 1em;
   width: 80%;
   margin: 0px auto;
 }
 
 .top-nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
   background-color: #222;
   border-color: #080808;
   height: 55px;
   border-radius: 4px;
-  display: grid;
-  grid-template-columns: 1fr auto;
   padding: 1em;
 }
 
 .main-nav {
   border: 1px solid #e5e5e5;
-  border-radius: 5px;
 }
 
 .welcome-txt {
-  color: #fff;
+  color: #FFF;
 }
 
 .top-nav-item {
@@ -40,7 +38,7 @@
 }
 
 .top-nav-item li a {
-  color: white;
+  color: #FFF;
   padding: 5px;
 }
 
@@ -50,30 +48,30 @@
 }
 
 .white {
-  background-color: white !important;
+  background-color: #FFF !important;
 }
 
 .banner {
   height: 340px;
+  border-radius: 10px;
   background-image: url('../img/whistler.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 14%;
-  border-radius: 10px;
-  color: white;
+  color: #FFF;
   padding: 3em;
 }
 
 .art-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-column-gap: 1em;
 }
 
 .art-c1-content {
   display: grid;
   grid-template-columns: 3fr 4fr;
   grid-column-gap: 2em;
-  /* height: 100%; */
 }
 
 .left {
@@ -195,9 +193,7 @@ h3.block-header-accent {
 
 
 /* footer start */
-
 .top-footer {
-  /* margin-top: 200px; */
   background-color: #E7E7E7;
 }
 
@@ -207,24 +203,23 @@ h3.block-header-accent {
   grid-column-gap: 1em;
   width: 80%;
   margin: 0px auto;
-  height: 300px;
+  height: 350px;
   padding: 10px 0px 0px;
+
 }
 
 .medium-txt {
   font-size: 1.25em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .footer-list {
   list-style-type: none;
 }
-
-.footer-list>li {
+.footer-list > li {
   margin-bottom: 15px;
   overflow: auto;
 }
-
 ul.footer-list>li>img {
   float: left;
   margin-right: 10px;
@@ -234,5 +229,18 @@ ul.footer-list>li>img {
   padding: 15px 0px;
   display: block;
 }
-
+.bottom-footer {
+  background-color: #3A3A3A;
+  color: #777;
+}
+.footer-bottom-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 80%;
+  margin: 0px auto;
+}
+.footer-bottom-inner > span {
+  padding: 15px 0px;
+  display: block;
+}
 /* footer end */
